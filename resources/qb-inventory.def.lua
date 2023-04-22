@@ -1,5 +1,5 @@
----@class QBInventoryExports
-local QBInventoryExports = {
+---@class QBInventoryExport
+local QBInventoryExport = {
 }
 
 ---@shape QBInventoryObjectEntry : QBInventoryWeightDefinition
@@ -42,7 +42,7 @@ local QBInventoryExports = {
 ---@overload fun(items: string|(string[])|(table<string,number>)): boolean
 ---@overload fun(source: Player, items: string|(string[])|(table<string,number>), amount: number): boolean
 ---@overload fun(source: Player, items: string|(string[])|(table<string,number>)): boolean
-function QBInventoryExports:HasItem(source, items, amount)
+function QBInventoryExport:HasItem(source, items, amount)
 end
 
 
@@ -53,7 +53,7 @@ end
 ---@param source Player Source of the player
 ---@param citizenId string CitizenID of the player
 ---@return table<number, QBInventoryObjectEntry> Returns the inventory of the player with items indexed by the slot number
-function QBInventoryExports:LoadInventory(source, citizenId)
+function QBInventoryExport:LoadInventory(source, citizenId)
 end
 
 ---SaveInventory
@@ -64,7 +64,7 @@ end
 ---@param offline false Is the player offline or not, if true, it will expect a table in source
 ---@overload fun(source: QBPlayerData, offline: true): void
 ---@overload fun(source: Player): void
-function QBInventoryExports:SaveInventory(source, offline)
+function QBInventoryExport:SaveInventory(source, offline)
 end
 
 
@@ -74,7 +74,7 @@ end
 ---
 ---@param items table<number, QBInventoryWeightDefinition> Table of items, usually the inventory table of the player
 ---@return number weight Total weight of param items
-function QBInventoryExports:GetTotalWeight(items)
+function QBInventoryExport:GetTotalWeight(items)
 end
 
 ---GetSlotsByItem
@@ -84,7 +84,7 @@ end
 ---@param items table<number, QBInventoryObjectEntry> Table of items, usually the inventory table of the player
 ---@param itemName string Name of the item to the get the slots from
 ---@return number[] slotsFound Array of slots that were found for the item
-function QBInventoryExports:GetSlotsByItem(items, itemName)
+function QBInventoryExport:GetSlotsByItem(items, itemName)
 end
 
 ---GetFirstSlotByItem
@@ -94,7 +94,7 @@ end
 ---@param items table<number, QBInventoryObjectEntry> Table of items, usually the inventory table of the player
 ---@param itemName string Name of the item to the get the slot from
 ---@return number | nil slot If found it returns a number representing the slot, otherwise it sends nil
-function QBInventoryExports:GetFirstSlotByItem(items, itemName)
+function QBInventoryExport:GetFirstSlotByItem(items, itemName)
 end
 
 ---AddItem
@@ -110,7 +110,7 @@ end
 ---@overload fun(source: Player, item: string, amount: number, slot: number): boolean
 ---@overload fun(source: Player, item: string, amount: number): boolean
 ---@overload fun(source: Player, item: string): boolean
-function QBInventoryExports:AddItem(source, item, amount, slot, info)
+function QBInventoryExport:AddItem(source, item, amount, slot, info)
 end
 
 
@@ -125,7 +125,7 @@ end
 ---@return boolean success Returns true if the item was remove, false it the item couldn't be removed
 ---@overload fun(source: Player, item: string, amount: number): boolean
 ---@overload fun(source: Player, item: string): boolean
-function QBInventoryExports:RemoveItem(source, item, amount, slot)
+function QBInventoryExport:RemoveItem(source, item, amount, slot)
 end
 
 ---GetItemBySlot
@@ -135,7 +135,7 @@ end
 ---@param source Player The source of the player to get the item from the slot
 ---@param slot number The slot to get the item from
 ---@return QBInventoryObjectEntry | nil item Returns the item table, if there is no item in the slot, it will return nil
-function QBInventoryExports:GetItemBySlot(source, slot)
+function QBInventoryExport:GetItemBySlot(source, slot)
 end
 
 ---GetItemByName
@@ -145,7 +145,7 @@ end
 ---@param source Player The source of the player
 ---@param item string The name of the item to get
 ---@return QBInventoryObjectEntry | nil item Returns the item table, if the item wasn't found, it will return nil
-function QBInventoryExports:GetItemByName(source, item)
+function QBInventoryExport:GetItemByName(source, item)
 end
 
 ---GetItemsByName
@@ -155,7 +155,7 @@ end
 ---@param source Player The source of the player
 ---@param item string The name of the item to get
 ---@return QBInventoryObjectEntry[] item Returns an array of the item tables found, if the item wasn't found, it will return an empty table
-function QBInventoryExports:GetItemsByName(source, item)
+function QBInventoryExport:GetItemsByName(source, item)
 end
 
 ---ClearInventory
@@ -165,7 +165,7 @@ end
 ---@param source Player Source of the player to clear the inventory from
 ---@param filterItems string | string[] Array of item names to keep
 ---@overload fun(source: number): void
-function QBInventoryExports:ClearInventory(source, filterItems)
+function QBInventoryExport:ClearInventory(source, filterItems)
 end
 
 ---SetInventory
@@ -174,7 +174,7 @@ end
 ---
 ---@param source Player The source of player to set it for
 ---@param items table<number, QBInventoryObjectEntry> Table of items, the inventory table of the player
-function QBInventoryExports:SetInventory(source, items)
+function QBInventoryExport:SetInventory(source, items)
 end
 
 ---SetItemData
@@ -186,7 +186,7 @@ end
 ---@param key string Name of the data index to change
 ---@param val any Value to set the data to
 ---@return boolean success Returns true if it worked
-function QBInventoryExports:SetItemData(source, itemName, key, val)
+function QBInventoryExport:SetItemData(source, itemName, key, val)
 end
 
 ---CreateUsableItem
@@ -195,7 +195,7 @@ end
 ---
 ---@param itemName string The name of the item to make usable
 ---@param data any
-function QBInventoryExports:CreateUsableItem(itemName, data)
+function QBInventoryExport:CreateUsableItem(itemName, data)
 end
 
 ---GetUsableItem
@@ -204,7 +204,7 @@ end
 ---
 ---@param itemName string The item to get the data for
 ---@return any usable_item
-function QBInventoryExports:GetUsableItem(itemName)
+function QBInventoryExport:GetUsableItem(itemName)
 end
 
 ---UseItem
@@ -213,7 +213,7 @@ end
 ---
 ---@param itemName string The name of the item to use
 ---@vararg any Arguments for the callback, this will be sent to the callback and can be used to get certain values
-function QBInventoryExports:UseItem(itemName, ...)
+function QBInventoryExport:UseItem(itemName, ...)
 end
 
 
@@ -224,7 +224,7 @@ end
 ---@param id string The inventory id
 ---@param other QBInventoryObject The other inventory object
 ---@param origin Player
-function QBInventoryExports:OpenInventory(name, id, other, origin)
+function QBInventoryExport:OpenInventory(name, id, other, origin)
 end
 
 ---addTrunkItems
@@ -232,7 +232,7 @@ end
 ---
 ---@param plate string
 ---@param items table<number,QBInventoryObjectEntry>
-function QBInventoryExports:addTrunkItems(plate, items)
+function QBInventoryExport:addTrunkItems(plate, items)
 end
 
 ---addGloveboxItems
@@ -240,5 +240,5 @@ end
 ---
 ---@param plate string
 ---@param items table<number,QBInventoryObjectEntry>
-function QBInventoryExports:addGloveboxItems(plate, items)
+function QBInventoryExport:addGloveboxItems(plate, items)
 end
