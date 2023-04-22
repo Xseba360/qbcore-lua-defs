@@ -6,7 +6,7 @@ Lua file reference for use with [Luanalysis](https://github.com/Benjamin-Dobell/
 JetBrains IDEs. **It will definitely not work with EmmyLua** due to `@shape` and `@overload`being used.
 
 
-<h1 align="center"><center>PULL REQUESTS WELCOME!</h1>
+<h1 align="center">PULL REQUESTS WELCOME!</h1>
 <p align="center"><b>If you want to write definitions for exports in other QB resources, feel free to open a pull request!</b></p>
 
 
