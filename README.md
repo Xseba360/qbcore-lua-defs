@@ -64,3 +64,7 @@ As you can see in the examples above, you can use the `@type` annotation to spec
 specify which function set of QBCore is available to you (server or client). This is necessary because the server and
 client function sets are not the same, and you will get errors if you try to use a client function on the server or vice
 versa. 
+
+## Examples of code completion
+![https://ibb.co/pdJZQGK](https://i.ibb.co/TtmR1p0/webstorm64-g-L4y-M2-G940.png)
+![https://ibb.co/1852Spm](https://i.ibb.co/r4SyWLw/webstorm64-yo-H7u0-KJOz.png)

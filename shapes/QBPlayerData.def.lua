@@ -1,6 +1,6 @@
 ---@shape QBPlayerData
 ---@field source Player
----@field citizenId any
+---@field citizenid string
 ---@field license string
 ---@field name string
 ---@field cid number

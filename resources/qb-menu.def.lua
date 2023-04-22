@@ -2,17 +2,19 @@
 local QBMenuExport = {
 }
 
+---@alias QBMenuEntryParamsArgs any
+
 ---@shape QBMenuEntryParams
 ---@field event string
----@field args any
+---@field args QBMenuEntryParamsArgs|nil
 
 ---@shape QBMenuEntry
----@field isMenuHeader boolean
+---@field isMenuHeader boolean|nil
 ---@field header string
 ---@field txt string
----@field disabled boolean
+---@field disabled boolean|nil
 ---@field params QBMenuEntryParams
----@field icon string
+---@field icon string|nil
 
 
 ---openMenu
