@@ -9,5 +9,6 @@
 ---@field Players table<Player, QBServerPlayer>
 ---@field Player QBPlayer
 ---@field Commands QBServerCommands
+---@field UsableItems table<string, any>
 local QBServer = {
 }

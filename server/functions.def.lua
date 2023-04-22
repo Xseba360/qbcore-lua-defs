@@ -223,10 +223,10 @@ function QBServerFunctions.CreateUseableItem(item, cb)
 end
 
 ---CanUseItem
----Check if an item is registered as usable before attempting use
+---Check if an item is registered as usable before attempting use, returns the item data if it is, otherwise nil
 ---
 ---@param item string
----@return boolean
+---@return any
 function QBServerFunctions.CanUseItem(item)
 end
 
