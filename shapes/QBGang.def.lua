@@ -1,0 +1,3 @@
+---@shape QBGang
+---@field label string Label of the gang (string)
+---@field grades table<string, QBGangGrade> Keys: grade id, Values: grade data

@@ -1,0 +1,5 @@
+---@shape QBProgressbarControls
+---@field disableMovement boolean|nil
+---@field disableCarMovement boolean|nil
+---@field disableMouse boolean|nil
+---@field disableCombat boolean|nil

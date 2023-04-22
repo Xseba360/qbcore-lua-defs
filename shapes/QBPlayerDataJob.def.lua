@@ -1,0 +1,8 @@
+---@shape QBPlayerDataJob
+---@field name string
+---@field label string
+---@field payment number
+---@field onduty boolean
+---@field isboss boolean
+---@field grade QBPlayerDataJobGrade
+---@field type string

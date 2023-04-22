@@ -1,0 +1,3 @@
+---@shape QBPlayerDataGangGrade
+---@field name string
+---@field level number

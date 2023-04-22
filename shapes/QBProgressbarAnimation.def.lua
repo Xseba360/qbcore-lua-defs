@@ -1,0 +1,5 @@
+---@shape QBProgressbarAnimation
+---@field animDict string|nil
+---@field anim string|nil
+---@field flags number|nil
+---@field task string|nil

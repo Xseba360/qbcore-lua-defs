@@ -1,0 +1,3 @@
+---@shape QBCommandArgument
+---@field name string
+---@field help string

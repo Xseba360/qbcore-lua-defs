@@ -1,0 +1,4 @@
+---@shape QBJob
+---@field label string job label (string)
+---@field defaultDuty boolean enable/disable player being auto clocked-in (bool)
+---@field grades table<string, QBJobGrade> Keys: grade id, Values: grade data

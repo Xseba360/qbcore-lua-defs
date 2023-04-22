@@ -1,0 +1,5 @@
+---@shape QBItemCombinableDataAnim
+---@field dict string The animation dictionary (for example: anim@amb@business@weed@weed_inspecting_high_dry@)
+---@field lib string The animation library (for example: weed_inspecting_high_base_inspector)
+---@field text string Text that will be displayed in the progress bar
+---@field timeOut number How long the animation should take to complete

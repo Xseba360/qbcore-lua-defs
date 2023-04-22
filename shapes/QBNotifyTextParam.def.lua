@@ -1,0 +1,3 @@
+---@shape QBNotifyTextParam
+---@field text string
+---@field caption string

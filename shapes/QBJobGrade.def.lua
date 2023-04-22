@@ -1,0 +1,4 @@
+---@shape QBJobGrade
+---@field name string job grade name (string)
+---@field payment number paycheck amount (number)
+---@field isboss boolean|nil set this grade as a boss to access boss menu

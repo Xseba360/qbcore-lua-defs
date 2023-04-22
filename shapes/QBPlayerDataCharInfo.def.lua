@@ -1,0 +1,9 @@
+---@shape QBPlayerDataCharInfo
+---@field firstname string
+---@field lastname string
+---@field birthdate string
+---@field gender number
+---@field backstory string
+---@field nationality string
+---@field phone string
+---@field account string

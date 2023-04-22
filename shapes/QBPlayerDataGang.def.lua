@@ -1,0 +1,5 @@
+---@shape QBPlayerDataGang
+---@field name string
+---@field label string
+---@field isboss boolean
+---@field grade QBPlayerDataGangGrade

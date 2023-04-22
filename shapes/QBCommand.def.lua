@@ -1,0 +1,7 @@
+---@shape QBCommand
+---@field name string
+---@field permission string|std__Packed<string>
+---@field help string
+---@field arguments QBCommandArgument[]
+---@field argsrequired boolean
+---@field callback fun(source: number, args: string[], rawCommand: string): void

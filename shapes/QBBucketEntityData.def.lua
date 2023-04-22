@@ -1,0 +1,3 @@
+---@shape QBBucketEntityData
+---@field id Entity
+---@field bucket number

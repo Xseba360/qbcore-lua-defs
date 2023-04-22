@@ -1,0 +1,28 @@
+---@shape QBPlayerDataMetadata
+---@field hunger number
+---@field thirst number
+---@field stress number
+---@field isdead boolean
+---@field inlaststand boolean
+---@field armor number
+---@field ishandcuffed boolean
+---@field tracker boolean
+---@field injail number
+---@field jailitems table<string, any>
+---@field status table<string, any>
+---@field phone table<string, any>
+---@field fitbit table<string, any>
+---@field commandbinds table<string, any>
+---@field bloodtype string
+---@field dealerrep number
+---@field craftingrep number
+---@field attachmentcraftingrep number
+---@field currentapartment any
+---@field jobrep table<string, number>
+---@field callsign string
+---@field fingerprint string
+---@field walletid string
+---@field criminalrecord table<string, any>
+---@field licences table<string, boolean>
+---@field inside table<string, any>
+---@field phonedata table<string, any>

@@ -1,0 +1,15 @@
+---@shape QBPlayerData
+---@field source Player
+---@field citizenId any
+---@field license string
+---@field name string
+---@field cid number
+---@field money table<string, number>
+---@field charinfo QBPlayerDataCharInfo
+---@field metadata QBPlayerDataMetadata
+---@field job QBPlayerDataJob
+---@field gang QBPlayerDataGang
+---@field position Vector3
+---@field LoggedIn boolean
+---@field items table<number, QBItem>
+---@field [string] any

@@ -1,0 +1,15 @@
+---@shape QBItem
+---@field name string Actual item name for spawning/giving/removing
+---@field label string Label of item that is shown in inventory slot
+---@field weight number How much the items weighs
+---@field type string What type the item is (ex: item, weapon)
+---@field ammotype string|nil The type of ammo this item accepts (nil|string)
+---@field image string This item image that is found in qb-inventory/html/images (must be same name as name)
+---@field unique boolean Is the item unique (true|false) - Cannot be stacked & accepts item info to be assigned
+---@field useable boolean Is the item useable (true|false) - Must still be registered as useable
+---@field description string Description of time in inventory
+---@field shouldClose boolean Should the item close the inventory on use (true|false)
+---@field combinable QBItemCombinableData|nil Is the item able to be combined with another? (nil|table)
+---@field info any|nil unknown
+---@field amount any|nil unknown
+

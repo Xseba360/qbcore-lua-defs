@@ -1,0 +1,9 @@
+---@shape QBVehicle
+---@field name string Desired name/label for the vehicle (string)
+---@field brand string The brand of vehicle (string)
+---@field model string Vehicle model/spawn name (string)
+---@field price number How much the vehicle costs at the dealership (number)
+---@field category string The category the vehicle will display in at the dealership (string)
+---@field categoryLabel string The label of the category the vehicle will display in at the dealership (string)
+---@field hash Hash Vehicle hash key (jenkins hash || GetHashKey(model))
+---@field shop string The desired shop the vehicle is available for sale at (string)

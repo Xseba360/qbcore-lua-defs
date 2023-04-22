@@ -1,0 +1,7 @@
+---@shape QBWeapon
+---@field name string Weapon hash (uses compile-time Jenkins hashes - See link at bottom of page)
+---@field label string Label of item that is shown in inventory slot
+---@field weight number How much the items weighs
+---@field weapontype string What type the item is (ex: item, weapon)
+---@field ammotype string The type of ammo this weapon accepts
+---@field damagereason string The reason for the damage (ex: Knifed / Stabbed / Eviscerated)

@@ -1,0 +1,3 @@
+---@shape QBStarterItem
+---@field amount number
+---@field item string

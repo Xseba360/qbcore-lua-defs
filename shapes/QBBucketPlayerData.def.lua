@@ -1,0 +1,3 @@
+---@shape QBBucketPlayerData
+---@field id Player
+---@field bucket number
