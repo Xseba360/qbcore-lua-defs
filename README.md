@@ -5,6 +5,11 @@
 Lua file reference for use with [Luanalysis](https://github.com/Benjamin-Dobell/IntelliJ-Luanalysis), a plugin for
 JetBrains IDEs. **It will definitely not work with EmmyLua** due to `@shape` and `@overload`being used.
 
+
+<h1 align="center"><center>PULL REQUESTS WELCOME!</h1>
+<p align="center"><b>If you want to write definitions for exports in other QB resources, feel free to open a pull request!</b></p>
+
+
 ## Installation
 
 - Drop the contents of this repository into your project's `fivem-lua-docs` folder. More information on attaching the
