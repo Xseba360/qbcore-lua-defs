@@ -4,7 +4,8 @@ local QBClientFunctions = {
 
 ---GetPlayerData
 ---@param cb fun(data: QBPlayerData)
-function QBClientFunctions:GetPlayerData(cb)
+---@overload fun(): QBPlayerData
+function QBClientFunctions.GetPlayerData(cb)
 end
 
 ---GetCoords
